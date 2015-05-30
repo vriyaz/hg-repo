@@ -1,26 +1,19 @@
-#!/bin/sh
+#!/bin/bash
 
-echo "apps"
-echo "............................................................"
-ls -1 ~/Local/applications
+date
 
+LOCAL=~/Local
 
-echo ""
-echo ""
-echo "tools"
-echo "............................................................"
-ls -1 ~/Local/tools
+folders=( "$LOCAL/apps" "$LOCAL/etc" "$LOCAL/lib/lib-js" "$LOCAL/lib/node_modules" )
 
-
-echo ""
-echo ""
-echo "lib-js"
-echo "............................................................"
-ls -1 ~/Local/lib-js
-
+for folder in "${folders[@]}"
+do
+    echo ""
+    echo ""
+    echo $folder
+    ls -1 $folder  |  sort
+done
 
 echo ""
 echo ""
-echo "node_modules"
-echo "............................................................"
-ls -1 ~/Local/node_modules
+echo "done & dusted.."
