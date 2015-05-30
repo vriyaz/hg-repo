@@ -1,0 +1,2 @@
+serviceClass: com.vriyaz.hg.client.GreetingService
+path: FFCF19BDB9D8F01C8304467614E1D64C.gwt.rpc

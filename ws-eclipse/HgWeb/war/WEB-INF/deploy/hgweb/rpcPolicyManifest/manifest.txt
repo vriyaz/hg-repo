@@ -1,0 +1,3 @@
+# Module hgweb
+# RPC service class, partial path of RPC policy file
+com.vriyaz.hg.client.GreetingService, FFCF19BDB9D8F01C8304467614E1D64C.gwt.rpc
